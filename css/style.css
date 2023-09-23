@@ -1,0 +1,171 @@
+/*Start variabels*/
+  :root {
+    /* Colors */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+  }
+/*End variabels*/
+
+* {
+  padding: unset;
+  margin: unset;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Start Coding (: */
+
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-color: var(--Violet);
+}
+header {
+  position: absolute;
+  left: 65px;
+  top: 65px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: auto;
+}
+.container .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50%);
+  width: 100%;
+}
+.container .text-container {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(50%);
+}
+
+.container .text-container h1 {
+  color: white;
+  padding-top: 10px;
+  line-height: 60px;
+  padding-bottom: 30px;
+  font-size: 50px;
+  font-weight: 400;
+}
+.container .text-container p {
+  max-width: 520px;
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+  line-height: 1.4;
+}
+.container .text-container .btn {
+  width: 200px;
+  padding: 18px;
+  border-radius: 50px;
+  margin-top: 20px;
+  color: var(--Violet);
+  border: none;
+  outline: none;
+  box-shadow: 8px 6px 7px rgb(0 0 0 / 26%);
+  font-weight: 400;
+  font-size: 21px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.container .text-container .btn:hover {
+  background-color: var(--Soft-Magenta);
+  color: white;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+footer ul {
+  display: flex;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+footer ul li {
+  padding-left: 40px ;
+  list-style-type: none;
+}
+footer ul li i {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+footer ul li i:hover {
+  color: var(--Soft-Magenta);
+  border-color: var(--Soft-Magenta);
+}
+
+/* Mobile Screen */
+
+@media (max-width:990px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  header {
+    position: absolute;
+    left: 50px;
+    top: 45px;
+  }
+  header img {
+    height: 45px;
+  }
+  .container .image-container img {
+    height: 300px;
+  }
+  .container .text-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  }
+  .container .text-container h1 {
+    font-size: 35px;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .container .text-container p {
+    text-align: center;
+    max-width: 350px;
+    padding-top: 0;
+  }
+  .container .text-container .btn {
+    width: 250px;
+    padding: 14px;
+    font-size: 17px;
+  }
+  footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+  }
+  footer ul li {
+    padding-left: 15px;
+  }
+  footer ul li .i3 {
+    font-size: 15px;
+  }
+}
+/* Coding with love by # Mohammed Hamdy # */
+/* i hope it is right (: */
