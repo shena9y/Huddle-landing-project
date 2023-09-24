@@ -98,6 +98,7 @@ footer ul li i {
   padding: 10px;
   border-radius: 50%;
   transition: 0.3s;
+  cursor: pointer;
 }
 footer ul li i:hover {
   color: var(--Soft-Magenta);
