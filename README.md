@@ -6,6 +6,8 @@ A solution to the **Huddle landing page with a single introductory section** cha
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-Challenge-3e54a3)
 
+🔗 **Live Demo:** [https://shena9y.github.io/Huddle-landing-project/](https://shena9y.github.io/Huddle-landing-project/)
+
 ## ✨ Features
 
 - 🏘️ Single-section landing page: "Build The Community Your Fans Will Love"
